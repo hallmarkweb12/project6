@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        #fill,select {
+            padding: 12px 15px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid green;
+            height: 2em;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            display: block;
+        }
+        select{
+            height: 4em;
+        }
+        #fill:focus {
+            color: blue;
+        }
+
+        body {
+            padding: 10px;
+            margin: 1px;
+        }
+
+        .fawaz {
+            color: royalblue;
+            text-align: center;
+        }
+
+        label {
+            margin: 5px;
+            text-align: left;
+            display: block;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .tony {
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: red;
+            color: white;
+        }
+
+        .tony:hover {
+            background-color: blue;
+        }
+
+        .tony:active {
+            background-color: rgb(133, 255, 103);
+        }
+
+        div {
+            background-color: rgb(253, 255, 246);
+            margin: auto;
+        }
+
+        form {
+            max-width: 400px;
+            width: 90%;
+            margin: auto;
+        }
+
+        div {
+            box-shadow: 0px 4px 15px rgba(1, 1, 1, 1);
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <header>
+            <h1 class="fawaz">Registration Form</h1>
+            <form action="">
+                <label for="Name">Full Name</label>
+                <input type="text" name="name" id="fill" placeholder="Enter Your Name">
+
+                <label for="Email address">Email Address</label>
+                <input type="Email" required id="fill" placeholder="name@email.com">
+
+                <label>Gender</label>
+                <select required>
+                    <option value="Select Gender" selected disabled>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="Password">Password</label>
+                <input type="Password" required name="Password" id="fill" placeholder="Enter Your Password">
+
+                <label for="Confirm Password">Confirm Password</label>
+                <input type=" Password" name="Confirm Password" id="fill" placeholder="Confirm Your Password">
+
+                <input type="button" value="Create Account" class="tony">
+            </form>
+        </header>
+    </div>
+</body>
+
+</html>
